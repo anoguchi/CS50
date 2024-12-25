@@ -1,13 +1,29 @@
-#include <cs50.h>
 #include <stdio.h>
+
+int getMaxRowSize();
+void print_row(int bricks);
 
 int main(void)
 {
-  for (int i = 0; i < 4; i++)
+  int maxRow = getMaxRowSize();
+  print_row(maxRow);  
+}
+
+int getMaxRowSize()
+{
+  int height;
+  printf("Height: ");
+  scanf("%i", &height);
+  return height;
+}
+
+void print_row(int bricks)
+{
+  for (int i = 0; i < bricks; i++)
   {
-    for (int j = 0; j < 4; j++)
+    for (int j = 0; j <= i; j++)
     {
-      printf("#");
+      printf("*");
     }
     printf("\n");
   }

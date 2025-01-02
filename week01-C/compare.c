@@ -10,10 +10,11 @@ int main(void)
   printf("What's y? ");
   scanf("%i", &y);
 
-  if(x < y) 
+  if (x < y)
   {
     printf("x is less than y\n");
-  } else if(x > y)
+  }
+  else if (x > y)
   {
     printf("x is greater than y\n");
   }

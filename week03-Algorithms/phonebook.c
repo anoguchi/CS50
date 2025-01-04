@@ -5,7 +5,7 @@
 int main(void)
 {
 
-  // Bad design, por isso precisamos de data structures
+  // bad design, por isso precisamos de data structures
   string names[] = {"Carter", "David", "John"};
   string numbers[] = {"+1-617-495-1000", "+1-617-495-1000", "+1-949-468-2750"};
 
